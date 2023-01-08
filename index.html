@@ -399,16 +399,12 @@
                 <label class="form__name-field-label">
                   <span class="visually-hidden">Введите имя</span>
                   <input type="text" placeholder="Имя" name="user-name" required minlength="1">
-                  <em data-name-warning>Введите
-                    имя</em><!--Класс для включения видимости .input-textarea-wrap__show-tip-->
                 </label>
               </div>
               <div class="form__telephone-field input-textarea-wrap" data-telephone-input>
                 <label class="form__telephone-field-label">
                   <span class="visually-hidden">Введите телефон</span>
-                  <input type="tel" placeholder="Телефон" name="user-telephone" required><!--minlength="11"-->
-                  <em data-telephone-warning>Введите 10-значный номер
-                    телефона</em><!--Класс для включения видимости .input-textarea-wrap__show-tip-->
+                  <input type="tel" placeholder="Телефон" name="user-telephone" maxlength="11" required>
                 </label>
               </div>
               <div class="form__email-field input-textarea-wrap" data-email-input>
