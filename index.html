@@ -9,9 +9,6 @@
   <link rel="icon" href="favicon.ico">
   <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicons/icon-180.png"><!-- 180×180 -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -61,7 +58,7 @@
     </header>
     <!--Main-->
     <main class="page__main main-content">
-      <div class="main-header__central-screen central-screen">
+      <div class="main-content__central-screen central-screen">
         <div class="container">
           <!--Central Screen-->
           <div class="central-screen__description">
@@ -141,7 +138,7 @@
           <h2 class="cruises__title">Ближайшие круизы</h2>
           <ul class="cruises__list">
             <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <!--Для проверки PP внутри карточки подставить класс .cruises__item--no-js-->
+              <!--Для проверки PP внутри карточки подставить класс .cruises__item--check -->
               <h3 class="cruises__item-title">Круиз “Астория”</h3>
               <picture>
                 <source media="(max-width: 768px)"
@@ -411,7 +408,7 @@
                 <label class="form__email-field-label">
                   <span class="visually-hidden">Введите e-mail</span>
                   <input type="email" placeholder="Email" name="user-email"
-                    required><!-- oninput="validateEmail(this)"-->
+                    required>
                 </label>
               </div>
               <div class="form__consent-checkbox consent-checkbox-wrap">
@@ -431,7 +428,8 @@
         <h2 class="visually-hidden">Наши контакты</h2>
         <div class="contacts__wrap container">
           <div class="contacts__map">
-            <div class="contacts__interactive-map" id="YMapsID"></div>
+            <!--<div class="contacts__interactive-map" id="YMapsID"></div>-->
+            <div class="contacts__interactive-map"></div>
             <div class="contacts__const-image-wrap">
               <picture>
                 <source media="(max-width: 768px)"
@@ -509,7 +507,7 @@
             </li>
             <li class="social-media__item">
               <a class="social-media__link social-media__link--star" href="#">
-                <svg class="logo__svg" focusable="false" width="20" height="20" aria-label=""><!--ИЗМЕНИТЬ НАЗВАНИЕ-->
+                <svg class="logo__svg" focusable="false" width="20" height="20" aria-label="Дзен">
                   <use xlink:href="img/sprite/sprite.svg#star"></use>
                 </svg>
               </a>
@@ -526,8 +524,8 @@
       </div>
     </footer>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=74532f13-8895-4664-8153-68a65d7ca79e&lang=ru_RU"
-    type="text/javascript"></script>
+  <!--<script src="https://api-maps.yandex.ru/2.1/?apikey=74532f13-8895-4664-8153-68a65d7ca79e&lang=ru_RU"
+    type="text/javascript"></script>-->
   <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js" type="module"></script>
 </body>
