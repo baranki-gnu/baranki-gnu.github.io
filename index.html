@@ -1,527 +1,816 @@
 <!DOCTYPE html>
-<html class="page" lang="ru" data-page>
+<html class="page" lang="ru">
 <head>
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Описание проекта">
-  <title>Круизы в Антарктику</title>
-  <link rel="icon" href="favicon.ico">
-  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="img/favicons/icon-180.png"><!-- 180×180 -->
-  <link rel="preload" href="fonts/Montserrat-Bold.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-SemiBold.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Medium.woff2" as="font">
-  <link rel="preload" href="fonts/Montserrat-Regular.woff2" as="font">
+  <title>Фитнес центр SUPERGYM</title>
+  <link rel="preload" href="fonts/alumni-sans-600.woff2" as="font">
+  <link rel="preload" href="fonts/alumni-sans-700.woff2" as="font">
+  <link rel="preload" href="fonts/alumni-sans-800.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-300.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-400.woff2" as="font">
+  <link rel="preload" href="fonts/roboto-condensed-700.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <div class="wrapper">
-    <!--Header-->
-    <header class="page__header main-header main-header--nav-closed main-header--nojs" data-header>
-      <!--Для открытия/закрытия меню используется класс main-header--nav-opened и main-header--nav-closed-->
-      <div class="main-header__page-overlay" data-page-overlay></div>
-      <div class="main-header__focus-trap" tabIndex="0"></div>
-      <div class="main-header__inner-wrap container">
-        <div class="main-header__logo-toggle-wrap">
-          <a class="logo logo--nojs"
-            data-logo-link><!--Для изменения вида лого при открытии мобильного меню использовать класс logo--black-->
-            <svg class="logo__svg" focusable="false" width="70" height="38" aria-label="Круизы в Антарктику">
-              <use xlink:href="img/sprite/sprite.svg#iceberg-logo"></use>
+    <header class="page__header main-header">
+      <nav class="main-header__navigation header-navigation container">
+        <div class="header-navigation__logo-wrap logo-block logo-block--header">
+          <a class="logo-block__link">
+            <svg focusable="false" width="130" height="22" aria-label="Фитнес центр SUPERGYM">
+              <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
             </svg>
           </a>
-          <div class="main-header__toggle toggle toggle--closed toggle--nojs" data-toggle-wrap>
-            <!--Для изменения вида кнопки используется класс toggle--opened и toggle--closed-->
-            <button class="main-header__toggle-button toggle-button" aria-label="Открытие-закрытие меню" data-menu-toggle>
-              <span class="visually-hidden">Кнопка открытия и закрытия выпадающего меню</span>
-              <svg class="toggle__burger-svg" focusable="false" width="24" height="12" aria-label="Открыть меню">
-                <use xlink:href="img/sprite/sprite.svg#burger"></use>
-              </svg>
-              <svg class="toggle__cross" focusable="false" width="13" height="13" aria-label="Закрыть меню">
-                <use xlink:href="img/sprite/sprite.svg#cross"></use>
+        </div>
+        <a class="header-navigation__phone" href="tel:88005555555">8-800-555-55-55</a>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="main-content__central-screen central-screen">
+        <div class="central-screen__wrap container container--central">
+          <h1 class="visually-hidden">SUPERGYM - Ваш фитнес центр в Омске</h1>
+          <ul class="central-screen__features">
+            <li class="central-screen__features-item">
+              <span>
+                Тренажерный зал
+              </span>
+            </li>
+            <li class="central-screen__features-item">
+              <span>
+                Групповые занятия
+              </span>
+            </li>
+            <li class="central-screen__features-item">
+              <span>
+                Кардио-зона
+              </span>
+            </li>
+          </ul>
+          <div class="central-screen__right-column">
+            <b>омск</b>
+            <h2>Фитнес центр</h2>
+            <a class="central-screen__buy-link button button--white" href="#" data-buy-pass>Купить абонемент</a>
+          </div>
+          <div class="central-screen__image-wrap">
+            <picture>
+              <source srcset="img/content/super-fitness-man@1x.webp 1x, img/content/super-fitness-man@2x.webp 2x"
+                type="image/webp">
+              <img src="img/content/super-fitness-man@1x.jpg"
+                srcset="img/content/super-fitness-man@1x.jpg 1x, img/content/super-fitness-man@2x.jpg 2x" width="500"
+                height="556" loading="lazy" alt="В нашем фитнес центре Вы добьетесь суперформы">
+            </picture>
+          </div>
+        </div>
+      </section>
+      <section class="main-content__gym gym">
+        <div class="gym__wrap container container--gym">
+          <div class="gym__text-wrap">
+            <div class="gym__inner-text-wrap">
+              <h2>Тренажерный зал</h2>
+              <b>Просторный зал площадью 900&nbsp;кв/м</b>
+              <p>
+                Supergym&nbsp;&mdash; самый большой фитнес центр за&nbsp;Уралом и&nbsp;идеальное место для укрепления
+                тела и&nbsp;здоровья. Тренажерный зал оснащен всем необходимым современным оборудованием для всех
+                спортсменов.
+              </p>
+              <p>
+                В&nbsp;зале расположены отдельная зона для Crossfit и&nbsp;кардио-зона с&nbsp;40&nbsp;тренажерами. Также
+                в&nbsp;фитнес центре есть несколько оборудованных залов для различных видов групповых занятий.
+              </p>
+            </div>
+          </div>
+          <div class="gym__photo-wrap">
+            <picture>
+              <source media="(max-width: 767px)"
+                srcset="img/content/fitness-centre-mobile@1x.webp 1x, img/content/fitness-centre-mobile@2x.webp 2x"
+                type="image/webp">
+              <source media="(max-width: 1199px)"
+                srcset="img/content/fitness-centre-tablet@1x.webp 1x, img/content/fitness-centre-tablet@2x.webp 2x"
+                type="image/webp">
+              <source media="(min-width: 1200px)"
+                srcset="img/content/fitness-centre-desktop@1x.webp 1x, img/content/fitness-centre-desktop@2x.webp 2x"
+                type="image/webp">
+              <img src="img/content/fitness-centre-desktop@1x.jpg"
+                srcset="img/content/fitness-centre-desktop@1x.jpg 1x, img/content/fitness-centre-desktop@2x.jpg 2x"
+                width="660" height="401" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+            </picture>
+          </div>
+          <div class="gym__video gym__video-nojs" data-video>
+            <div class="gym__video-wrap">
+              <div class="gym__video-cover" data-video-cover>
+                <picture>
+                  <source media="(max-width: 767px)"
+                    srcset="img/content/video-picture-mobile@1x.webp 1x, img/content/video-picture-mobile@2x.webp 2x"
+                    type="image/webp">
+                  <source
+                    srcset="img/content/video-picture-desktop@2x.webp 1x, img/content/video-picture-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/video-picture-desktop@1x.jpg"
+                    srcset="img/content/video-picture-desktop@1x.jpg 1x, img/content/video-picture-desktop@2x.jpg 2x"
+                    width="364" height="228" loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
+                </picture>
+              </div>
+              <iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228" data-iframe></iframe>
+            </div>
+            <button class="gym__video-play" type="button" data-play-button>
+              <svg width="73" height="73" viewBox="0 0 73 73" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="36.5" cy="36.5" r="35.5" stroke="url(#paint0_linear_13506_23)" stroke-opacity="0.2"
+                  stroke-width="2" />
+                <circle cx="36" cy="36" r="26" fill="url(#paint1_linear_13506_23)" />
+                <path d="M42 36L33 41.1962L33 30.8038L42 36Z" />
+                <defs>
+                  <linearGradient id="paint0_linear_13506_23" x1="14.435" y1="2.1949e-05" x2="77.2232" y2="7.77042"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#ED0233" />
+                    <stop offset="1" stop-color="#003EB7" />
+                  </linearGradient>
+                  <linearGradient id="paint1_linear_13506_23" x1="10" y1="35.6533" x2="39.0231" y2="6.52189"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0" stop-color="#003D85" />
+                    <stop offset="0.885417" stop-color="#B80027" />
+                  </linearGradient>
+                </defs>
               </svg>
             </button>
           </div>
         </div>
-        <!--Navigation-->
-        <nav class="main-header__navigation user-navigation" data-navigation>
-          <ul class="main-header__navigation-list user-navigation__list user-navigation__list--mobile">
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#" data-strengths-link data-link-to="strengths">Преимущества</a>
-            </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Направления</a>
-            </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#" data-cruises-link data-link-to="cruises">Ближайшие круизы</a>
-            </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#" data-contacts-link data-link-to="contacts">Контакты</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-      <div class="main-header__focus-trap" tabIndex="0"></div>
-    </header>
-    <!--Main-->
-    <main class="page__main main-content">
-      <div class="main-content__central-screen central-screen">
-        <div class="container">
-          <!--Central Screen-->
-          <div class="central-screen__description">
-            <h1>Круизы в&nbsp;Антарктику</h1>
-            <p>Волшебный мир <br>айсбергов и&nbsp;пингвинов</p>
+      </section>
+      <section class="main-content__exercise-pass exercise-pass" data-exercise-pass>
+        <div class="exercise-pass__wrap container">
+          <h2 class="title">Абонементы</h2>
+          <div class="exercise-pass__duration-wrap exercise-pass__duration-wrap--nojs" data-tabs-duration-wrap>
+            <ul class="exercise-pass__duration-list" data-tabs-buttons>
+              <li class="exercise-pass__duration-item exercise-pass__duration-item--active">
+                <button type="button" data-duration="1 месяц">1&nbsp;месяц</button>
+              </li>
+              <li class="exercise-pass__duration-item">
+                <button type="button" data-duration="6 месяцев">6&nbsp;месяцев</button>
+              </li>
+              <li class="exercise-pass__duration-item">
+                <button type="button" data-duration="12 месяцев">12&nbsp;месяцев</button>
+              </li>
+            </ul>
+          </div>
+          <div class="exercise-pass__tabs-container">
+            <ul class="exercise-pass__tab-list tab-list tab-list--nojs" data-tabs-content>
+              <!--First Tab-->
+              <li class="tab-list__item tab-list__item--current tab-list__item--nojs pass-types" data-tab="1 месяц">
+                <ul class="tab-list__pass-types pass-types__list">
+                  <!--With a coach-->
+                  <li class="pass-types__item">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>1&nbsp;месяц</span>
+                      <h4>С&nbsp;тренером</h4>
+                      <span>12&nbsp;занятий</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">5000</span>
+                        <b>5000</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!--Daytime-->
+                  <li class="pass-types__item pass-types__item--active">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>1&nbsp;месяц</span>
+                      <h4>Дневной</h4>
+                      <span>с&nbsp;8:00 до&nbsp;17:00</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">1700</span>
+                        <b>1700</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!--Full Day-->
+                  <li class="pass-types__item">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>1&nbsp;месяц</span>
+                      <h4>Полный день</h4>
+                      <span>с&nbsp;8:00 до&nbsp;22:00</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">2700</span>
+                        <b>2700</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!--Second Tab-->
+              <li class="tab-list__item tab-list__item--nojs pass-types" data-tab="6 месяцев">
+                <ul class="tab-list__pass-types pass-types__list">
+                  <!--With a coach-->
+                  <li class="pass-types__item">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>6&nbsp;месяцев</span>
+                      <h4>С&nbsp;тренером</h4>
+                      <span>72&nbsp;занятия</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">25000</span>
+                        <b>25000</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!--Daytime-->
+                  <li class="pass-types__item pass-types__item--active">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>6&nbsp;месяцев</span>
+                      <h4>Дневной</h4>
+                      <span>с&nbsp;8:00 до&nbsp;17:00</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">8700</span>
+                        <b>8700</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!--Full Day-->
+                  <li class="pass-types__item">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>6&nbsp;месяцев</span>
+                      <h4>Полный день</h4>
+                      <span>с&nbsp;8:00 до&nbsp;22:00</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">11700</span>
+                        <b>11700</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+              <!--Third Tab-->
+              <li class="tab-list__item tab-list__item--nojs pass-types" data-tab="12 месяцев">
+                <ul class="tab-list__pass-types pass-types__list">
+                  <!--With a coach-->
+                  <li class="pass-types__item">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>12&nbsp;месяцев</span>
+                      <h4>С&nbsp;тренером</h4>
+                      <span>144 занятия</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">47000</span>
+                        <b>47000</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!--Daytime-->
+                  <li class="pass-types__item pass-types__item--active">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>12&nbsp;месяцев</span>
+                      <h4>Дневной</h4>
+                      <span>с&nbsp;8:00 до&nbsp;17:00</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">15000</span>
+                        <b>15000</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                  <!--Full Day-->
+                  <li class="pass-types__item">
+                    <div class="pass-types__item-inner-wrap">
+                      <span class="pass-types__item-info-tip pass-types__item-info-tip--nojs"
+                        data-tab-tip>12&nbsp;месяцев</span>
+                      <h4>Полный день</h4>
+                      <span>с&nbsp;8:00 до&nbsp;22:00</span>
+                      <div class="pass-types__price-wrap">
+                        <span aria-hidden="true">20400</span>
+                        <b>20400</b>
+                        <svg class="pass-types__ruble" focusable="false" width="30" height="42" aria-label="Рублей">
+                          <use xlink:href="img/sprite/sprite.svg#ruble"></use>
+                        </svg>
+                      </div>
+                      <div class="pass-types__link-wrap">
+                        <a class="pass-types__link button" href="#">купить абонемент</a>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-      <section class="main-content__voyage voyage container">
-        <div class="voyage__outer-wrap">
-          <div class="voyage__inner-wrap">
-            <h2>Путешествие на&nbsp;край Земли</h2>
-            <p>
-              Это волшебное путешествие поможет вам познакомиться поближе с&nbsp;удивительным
-              миром Антарктики. Наш круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные
-              айсберги, несколько видов пингвинов, китов, морских котиков и&nbsp;многое другое.
-            </p>
+        <div class="exercise-pass__bottom-wrap"></div>
+      </section>
+      <section class="main-content__crossfit-competition crossfit-competition">
+        <div class="crossfit-competition__wrap container">
+          <div class="crossfit-competition__info-wrap">
+            <div class="crossfit-competition__info-innerwrap">
+              <h2 class="visually-hidden">SUPER GAMES&nbsp;&mdash; соревнования по&nbsp;CrossFit</h2>
+              <h3 class="crossfit-competition__title title">SUPER GAMES</h3>
+              <p>Ежегодные соревнования по&nbsp;CrossFit</p>
+              <dl class="crossfit-competition__info">
+                <dt>Дата</dt>
+                <dd>
+                  <b>7</b>
+                  <span>Марта 2019</span>
+                </dd>
+                <dt>Время</dt>
+                <dd>
+                  <b>12:00</b>
+                </dd>
+              </dl>
+              <a class="crossfit-competition__link button button--white" href="#">заполнить заявку</a>
+            </div>
           </div>
-          <picture>
-            <source media="(max-width: 768px)"
-              srcset="img/content/penguins-mobile@1x.webp 1x, img/content/penguins-mobile@2x.webp 2x" type="image/webp">
-            <source media="(max-width: 1023px)"
-              srcset="img/content/penguins-tablet@1x.webp 1x, img/content/penguins-tablet@2x.webp 2x" type="image/webp">
-            <source media="(min-width: 1024px)"
-              srcset="img/content/penguins-desktop@1x.webp 1x, img/content/penguins-desktop@2x.webp 2x"
-              type="image/webp">
-            <img src="img/content/penguins-desktop@1x.jpg"
-              srcset="img/content/penguins-desktop@1x.jpg 1x, img/content/penguins-desktop@2x.jpg 2x" width="560"
-              height="301" alt="Фотография пингвинов в Антарктике.">
-          </picture>
+          <div class="crossfit-competition__image-wrap">
+            <picture>
+              <source srcset="img/content/super-games@1x.webp 1x, img/content/super-games@2x.webp 2x" type="image/webp">
+              <img src="img/content/super-games@1x.jpg"
+                srcset="img/content/super-games@1x.jpg 1x, img/content/super-games@2x.jpg 2x" width="660" height="500"
+                loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+            </picture>
+          </div>
         </div>
       </section>
-      <!--Strengths-->
-      <section class="main-content__strengths strengths" data-strengths>
-        <div class="strengths__outer-wrap container">
-          <h2 class="strengths__title">Преимущества</h2>
+      <section class="main-content__coaches coaches">
+        <div class="coaches__title-wrap container">
+          <h2 class="coaches__title title">Тренеры</h2>
+        </div>
+        <div class="coaches__arrows-slider-container">
+          <div class="swiper coach-slider coaches__outer-wrap">
+            <div class="swiper-wrapper coaches__wrap container container--coaches">
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-1-desktop@1x.webp 1x, img/content/coach-1-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-1-desktop@1x.jpg"
+                    srcset="img/content/coach-1-desktop@1x.jpg 1x, img/content/coach-1-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Анна Павлова</h3>
+                  <span>Степ-аэробика</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;5 Trainer</li>
+                    <li class="coach-card__expertise-item">Победитель региональных соревнований</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 3&nbsp;года</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-2-desktop@1x.webp 1x, img/content/coach-2-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-2-desktop@1x.jpg"
+                    srcset="img/content/coach-2-desktop@1x.jpg 1x, img/content/coach-2-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Алексей Лавров</h3>
+                  <span>BodyPump</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;4 Trainer</li>
+                    <li class="coach-card__expertise-item">Победитель соревнований среди штангистов в&nbsp;г. Омск</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 5&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-3-desktop@1x.webp 1x, img/content/coach-3-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-3-desktop@1x.jpg"
+                    srcset="img/content/coach-3-desktop@1x.jpg 1x, img/content/coach-3-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Александр Пашков</h3>
+                  <span>CrossFit</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;3 Trainer</li>
+                    <li class="coach-card__expertise-item">Победитель чемпионата России по&nbsp;CrossFit</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-4-desktop@1x.webp 1x, img/content/coach-4-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-4-desktop@1x.jpg"
+                    srcset="img/content/coach-4-desktop@1x.jpg 1x, img/content/coach-4-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Мария Кетова</h3>
+                  <span>Cycling</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;2 Trainer</li>
+                    <li class="coach-card__expertise-item">Победитель региональных соревнований по&nbsp;Cycling</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-1-desktop@1x.webp 1x, img/content/coach-1-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-1-desktop@1x.jpg"
+                    srcset="img/content/coach-1-desktop@1x.jpg 1x, img/content/coach-1-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Екатерина Трицепцова</h3>
+                  <span>TRX</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;6 Trainer</li>
+                    <li class="coach-card__expertise-item">Победитель региональных соревнований</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 2&nbsp;года</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-2-desktop@1x.webp 1x, img/content/coach-2-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-2-desktop@1x.jpg"
+                    srcset="img/content/coach-2-desktop@1x.jpg 1x, img/content/coach-2-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Дайске Ногами</h3>
+                  <span>BodyCombat</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">2&nbsp;Дан каратэ</li>
+                    <li class="coach-card__expertise-item">Победитель соревнований России по&nbsp;каратэ</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 11&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-3-desktop@1x.webp 1x, img/content/coach-3-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-3-desktop@1x.jpg"
+                    srcset="img/content/coach-3-desktop@1x.jpg 1x, img/content/coach-3-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Сергей Бицепсов</h3>
+                  <span>Функциональные тренировки</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;4 Trainer</li>
+                    <li class="coach-card__expertise-item">КМС по&nbsp;триатлону</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 9&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="swiper-slide coaches__personal-card coach-card">
+                <picture>
+                  <source srcset="img/content/coach-4-desktop@1x.webp 1x, img/content/coach-4-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/coach-4-desktop@1x.jpg"
+                    srcset="img/content/coach-4-desktop@1x.jpg 1x, img/content/coach-4-desktop@2x.jpg 2x" width="260"
+                    height="294" loading="lazy" alt="Фотография тренажерного зала SUPRERGYM.">
+                </picture>
+                <div class="coach-card__inner-wrap">
+                  <h3 class="coach-card__title">Ольга Прессова</h3>
+                  <span>ABS</span>
+                  <ul class="coach-card__expertise-list">
+                    <li class="coach-card__expertise-item">Certified Level&nbsp;5 Trainer</li>
+                    <li class="coach-card__expertise-item">Победитель соревнований &quot;1000 и&nbsp;1&nbsp;упражнение
+                      для укрепления пресса"</li>
+                    <li class="coach-card__expertise-item">Опыт&nbsp;&mdash; 6&nbsp;лет</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="coaches__button coaches__button--prev swiper-button-prev slider-button slider-button--prev">
+            <svg focusable="false" width="16" height="32" aria-label="Предыдущий слайд">
+              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+          <div class="coaches__button coaches__button--next swiper-button-next slider-button">
+            <svg focusable="false" width="16" height="32" aria-label="Следующий слайд">
+              <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="main-content__strengths strengths">
+        <div class="strengths__wrap container container--strengths">
+          <h2 class="strengths__title title">Наши преимущества</h2>
           <ul class="strengths__list">
-            <li class="strengths__item strengths__item--little-ship">
-              <svg class="strengths__svg" focusable="false" width="27" height="32"
-                aria-label="Круизы проводятся на небольших лайнерах">
-                <use xlink:href="img/sprite/sprite.svg#little-ship"></use>
-              </svg>
-              <h3 class="strengths__item-title">Небольшой круизный&nbsp;лайнер</h3>
-              <p>
-                Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать
-                шума и&nbsp;очередей и&nbsp;даст возможность насладиться видами и&nbsp;природой.
-              </p>
-            </li>
-            <li class="strengths__item strengths__item--double-tick">
-              <svg class="strengths__svg" focusable="false" width="38" height="32"
-                aria-label="Круизы проводятся на небольших лайнерах">
-                <use xlink:href="img/sprite/sprite.svg#double-tick"></use>
-              </svg>
-              <h3 class="strengths__item-title">Система <br>все&nbsp;включено</h3>
-              <p>
-                Все наши круизы работают по&nbsp;системе “Все Включено”. Великолепные блюда
-                и&nbsp;безлимитный бар доступны для вас 24&nbsp;часа.
-              </p>
-            </li>
-            <li class="strengths__item strengths__item--ship">
-              <svg class="strengths__svg" focusable="false" width="44" height="32"
-                aria-label="Круизы проводятся на небольших лайнерах">
-                <use xlink:href="img/sprite/sprite.svg#ship"></use>
-              </svg>
-              <h3 class="strengths__item-title">Экскурсионные <br>туры на&nbsp;Zodiac</h3>
-              <p>
-                Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках
-                типа Zodiack c&nbsp;опытными экскурсоводами.
-              </p>
-            </li>
-          </ul>
-        </div>
-      </section>
-      <!--Cruises-->
-      <section class="main-content__cruises cruises" data-cruises>
-        <div class="cruises__wrap container">
-          <h2 class="cruises__title">Ближайшие круизы</h2>
-          <ul class="cruises__list">
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <!--Для проверки PP внутри карточки подставить класс .cruises__item--check -->
-              <h3 class="cruises__item-title">Круиз “Астория”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/astoria-mobile@1x.webp 1x, img/content/astoria-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/astoria-tablet@1x.webp 1x, img/content/astoria-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/astoria-desktop@1x.webp 1x, img/content/astoria-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/astoria-desktop@1x.jpg"
-                  srcset="img/content/astoria-desktop@1x.jpg 1x, img/content/astoria-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Астория.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Аргентина&nbsp;- Фолклендские острова&nbsp;- Антарктида</dd>
-                  <dt class="cruises__info-term">Порт отправления</dt>
-                  <dd class="cruises__info-description">Ушуайя</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">11 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;11500&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
+            <li class="strengths__item strengths__item--bottom-line">
+              <div class="strengths__item-first-column">
+                <b>900</b>
+                <span>кв/м</span>
+              </div>
+              <div class="strengths__item-second-column">
+                <h3 class="strengths__item-title">Площадь</h3>
+                <p>Занимайтесь без очередей и&nbsp;толкучки</p>
               </div>
             </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Элайн”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/astoria-mobile@1x.webp 1x, img/content/astoria-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/astoria-tablet@1x.webp 1x, img/content/astoria-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/astoria-desktop@1x.webp 1x, img/content/astoria-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/astoria-desktop@1x.jpg"
-                  srcset="img/content/astoria-desktop@1x.jpg 1x, img/content/astoria-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Элайн.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Аргентина&nbsp;- Фолклендские острова&nbsp;-
-                    Антарктида&nbsp;- Чили</dd>
-                  <dt class="cruises__info-term">Порт отправления</dt>
-                  <dd class="cruises__info-description">Буэнос-Айрес</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">20 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;14500&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
+            <li class="strengths__item strengths__item--bottom-line">
+              <div class="strengths__item-first-column">
+                <b>70</b>
+                <span>машин</span>
+              </div>
+              <div class="strengths__item-second-column">
+                <h3 class="strengths__item-title">Собственная парковка</h3>
+                <p>Вы&nbsp;всегда найдете место для своей машины на&nbsp;нашей парковке</p>
               </div>
             </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Атлантис”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/atlantis-mobile@1x.webp 1x, img/content/atlantis-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/atlantis-tablet@1x.webp 1x, img/content/atlantis-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/atlantis-desktop@1x.webp 1x, img/content/atlantis-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/atlantis-desktop@1x.jpg"
-                  srcset="img/content/atlantis-desktop@1x.jpg 1x, img/content/atlantis-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Атлантис.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Аргентина&nbsp;- Южная Георгия и&nbsp;Южные Сандвичевы
-                    Острова&nbsp;- Антарктида</dd>
-                  <dt class="cruises__info-term">Порт отправления</dt>
-                  <dd class="cruises__info-description">Ушуайя</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">15 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;14500&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
+            <li class="strengths__item strengths__item--main">
+              <div class="strengths__item__inner-wrap">
+                <h3 class="strengths__item-title strengths__item-title--main">100 <span>Тренажеров</span></h3>
+                <p>Современные тренажеры на&nbsp;все группы мышц</p>
               </div>
             </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Одиссей”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/odissey-mobile@1x.webp 1x, img/content/odissey-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/odissey-tablet@1x.webp 1x, img/content/odissey-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/odissey-desktop@1x.webp 1x, img/content/odissey-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/odissey-desktop@1x.jpg"
-                  srcset="img/content/odissey-desktop@1x.jpg 1x, img/content/odissey-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Одиссей.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Чили&nbsp;- Антарктида</dd>
-                  <dt class="cruises__info-term">Порт отправления</dt>
-                  <dd class="cruises__info-description">Пунта-Аренас</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">13 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;9700&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
+            <li class="strengths__item">
+              <div class="strengths__item-first-column">
+                <b>350</b>
+                <span>мест</span>
+              </div>
+              <div class="strengths__item-second-column">
+                <h3 class="strengths__item-title">Комфорт</h3>
+                <p>Просторные раздевалки, душевые, фен, Wi-Fi, кулеры</p>
               </div>
             </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Олимпия”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/olimpya-mobile@1x.webp 1x, img/content/olimpya-mobile@2x.webp 2x"
-                  type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/olimpya-tablet@1x.webp 1x, img/content/olimpya-tablet@2x.webp 2x"
-                  type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/olimpya-desktop@1x.webp 1x, img/content/olimpya-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/olimpya-desktop@1x.jpg"
-                  srcset="img/content/olimpya-desktop@1x.jpg 1x, img/content/olimpya-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Олимпия.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Аргентина&nbsp;- Фолклендские острова&nbsp;- Южная
-                    Георгия&nbsp;- Антарктида</dd>
-                  <dt class="cruises__info-term">Порт отправления</dt>
-                  <dd class="cruises__info-description">Ушуайя</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">21 день</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;18600&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
+            <li class="strengths__item">
+              <div class="strengths__item-first-column">
+                <b>5+</b>
+                <span>лет</span>
               </div>
-            </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Аврора”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/avrora-mobile@1x.webp 1x, img/content/avrora-mobile@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/avrora-tablet@1x.webp 1x, img/content/avrora-tablet@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/avrora-desktop@1x.webp 1x, img/content/avrora-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/avrora-desktop@1x.jpg"
-                  srcset="img/content/avrora-desktop@1x.jpg 1x, img/content/avrora-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Аврора.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Аргентина&nbsp;- Антарктида&nbsp;- Чили</dd>
-                  <dt class="cruises__info-term">Порт отправления</dt>
-                  <dd class="cruises__info-description">Ушуайя</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">14 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;11700&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Леонор”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/leonor-mobile@1x.webp 1x, img/content/leonor-mobile@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/leonor-tablet@1x.webp 1x, img/content/leonor-tablet@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/leonor-desktop@1x.webp 1x, img/content/leonor-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/leonor-desktop@1x.jpg"
-                  srcset="img/content/leonor-desktop@1x.jpg 1x, img/content/leonor-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Леонор.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Чили&nbsp;- Южная Георгия&nbsp;- Антарктида&nbsp;- Аргентина
-                  </dd>
-                  <dt class="cruises__info-term">Пунта-Аренас</dt>
-                  <dd class="cruises__info-description">Ушуайя</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">17 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;12500&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
-              </div>
-            </li>
-            <li class="cruises__item cruises__item--no-js" data-cruise-item>
-              <h3 class="cruises__item-title">Круиз “Минион&nbsp;- 1”</h3>
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/minion-mobile@1x.webp 1x, img/content/minion-mobile@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/minion-tablet@1x.webp 1x, img/content/minion-tablet@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/minion-desktop@1x.webp 1x, img/content/minion-desktop@2x.webp 2x"
-                  type="image/webp">
-                <img src="img/content/minion-desktop@1x.jpg"
-                  srcset="img/content/minion-desktop@1x.jpg 1x, img/content/minion-desktop@2x.jpg 2x" width="260"
-                  height="386" loading="lazy" alt="Фотография из путешествия в круизе Минион - 1.">
-              </picture>
-              <div class="cruises__inner-wrap">
-                <dl class="cruises__info-list">
-                  <dt class="cruises__info-term">Маршрут</dt>
-                  <dd class="cruises__info-description">Аргентина&nbsp;&mdash; Антарктида</dd>
-                  <dt class="cruises__info-term">Ушуайя</dt>
-                  <dd class="cruises__info-description">Ушуайя</dd>
-                  <dt class="cruises__info-term">Продолжительность</dt>
-                  <dd class="cruises__info-description">11 дней</dd>
-                  <dt class="cruises__info-term">Цена</dt>
-                  <dd class="cruises__info-description">от&nbsp;12300&nbsp;$</dd>
-                </dl>
-                <a class="cruises__order-item button" href="#">Забронировать</a>
+              <div class="strengths__item-second-column">
+                <h3 class="strengths__item-title">Тренерский опыт</h3>
+                <p>Добивайтесь своих целей быстрее с&nbsp;профессиональным тренером</p>
               </div>
             </li>
           </ul>
         </div>
       </section>
-      <!--Form-->
-      <section class="main-content__order-form order-form">
-        <div class="order-form__wrap container">
-          <div class="order-form__title-text-wrap">
-            <h2>Раннее бронирование</h2>
-            <p>
-              Забронируйте тур <br>за&nbsp;3-6 месяцев
-              до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%
-            </p>
-          </div>
-          <div class="order-form__inner-wrap">
-            <form class="order-form__form form" action="https://echo.htmlacademy.ru" method="post" data-order-form>
-              <h3>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</h3>
-              <div class="form__name-field input-textarea-wrap" data-name-input>
-                <label class="form__name-field-label">
-                  <span class="visually-hidden">Введите имя</span>
-                  <input type="text" placeholder="Имя" name="user-name" required minlength="1">
-                </label>
+      <section class="main-content__promos promos">
+        <div class="promos__wrap container">
+          <h2 class="promos__title title">Акции</h2>
+          <div class="promos__inner-wrap">
+            <div class="promos__best-deal-wrap">
+              <div class="promos__best-deal-info">
+                <div class="promos__best-deal-text-wrap">
+                  <h3 class="visually-hidden">Годовой абонемент по&nbsp;супервыгодной цене</h3>
+                  <span>Год</span>
+                  <b>4999</b>
+                  <p>Безлимитный абонемент в&nbsp;тренажерный зал</p>
+                </div>
+                <div class="promos__best-deal-link-wrap">
+                  <a class="promos__link promos__link--best" href="#">подробнее</a>
+                </div>
               </div>
-              <div class="form__telephone-field input-textarea-wrap" data-telephone-input>
-                <label class="form__telephone-field-label">
-                  <span class="visually-hidden">Введите телефон</span>
-                  <input type="tel" placeholder="Телефон" name="user-telephone" required>
-                </label>
+              <div class="promos__best-deal-image">
+                <picture>
+                  <source media="(min-width: 1200px)"
+                    srcset="img/content/promo-coach-desktop@1x.webp 1x, img/content/promo-coach-desktop@2x.webp 2x"
+                    type="image/webp">
+                  <source media="(max-width: 1999px)"
+                    srcset="img/content/promo-coach-tablet@1x.webp 1x, img/content/promo-coach-tablet@2x.webp 2x"
+                    type="image/webp">
+                  <img src="img/content/promo-coach-desktop@1x.jpg"
+                    srcset="img/content/promo-coach-desktop@1x.jpg 1x, img/content/promo-coach-desktop@2x.jpg 2x"
+                    width="280" height="462" loading="lazy"
+                    alt="Достигните своей наилучшей физической формы в фитнес центре SUPERGYM.">
+                </picture>
               </div>
-              <div class="form__email-field input-textarea-wrap" data-email-input>
-                <label class="form__email-field-label">
-                  <span class="visually-hidden">Введите e-mail</span>
-                  <input type="email" placeholder="Email" name="user-email"
-                    required>
-                </label>
-              </div>
-              <div class="form__consent-checkbox consent-checkbox-wrap">
-                <label class="form__consent-checkbox-label">
-                  <input type="checkbox" name="consent" checked required>
-                  <span></span>
-                  <b>Я&nbsp;согласен на&nbsp;обработку моих&nbsp;персональных данных</b>
-                </label>
-              </div>
-              <button type="submit" data-send-button>Оставить заявку</button>
-            </form>
-          </div>
-        </div>
-      </section>
-      <!--Contacts-->
-      <section class="main-content__contacts contacts" data-contacts>
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrap container">
-          <div class="contacts__map">
-            <div class="contacts__interactive-map" id="YMapsID"></div>
-            <div class="contacts__const-image-wrap">
-              <picture>
-                <source media="(max-width: 768px)"
-                  srcset="img/content/map-mobile@1x.webp 1x, img/content/map-mobile@2x.webp 2x" type="image/webp">
-                <source media="(max-width: 1023px)"
-                  srcset="img/content/map-tablet@1x.webp 1x, img/content/map-tablet@2x.webp 2x" type="image/webp">
-                <source media="(min-width: 1024px)"
-                  srcset="img/content/map-desktop@1x.webp 1x, img/content/map-desktop@2x.webp 2x" type="image/webp">
-                <img src="img/content/map-desktop@1x.jpg"
-                  srcset="img/content/map-desktop@1x.jpg 1x, img/content/map-desktop@2x.jpg 2x" width="560" height="306"
-                  loading="lazy" alt="г. Санкт Петербург, ул. Большая Конюшенная, 19/8.">
-              </picture>
             </div>
-          </div>
-          <div class="contacts__text">
-            <div class="contacts__text-inner-wrap">
-              <b class="contacts__text-promt">
-                У&nbsp;вас ещё остались вопросы или сомнения?<br>
-                Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все расскажем.
-              </b>
-              <p class="contacts__address">
-                <svg class="contacts__svg" focusable="false" width="18" height="22"
-                  aria-label="Наш офис находится здесь">
-                  <use xlink:href="img/sprite/sprite.svg#mark"></use>
-                </svg>
-                <span>г. Санкт Петербург, <br>ул. Большая Конюшенная, 19/8</span>
-              </p>
-              <a class="contacts__tel-link" href="tel:88002000000">
-                <svg class="contacts__svg" focusable="false" width="18" height="18" aria-label="Позвоните нам">
-                  <use xlink:href="img/sprite/sprite.svg#phone"></use>
-                </svg>
-                <span>8-800-200-00-00</span>
-              </a>
+            <div class="promos__extra">
+              <div class="promos__extra-border-wrap">
+                <div class="promos__extra-deal promos__extra-deal--free-month">
+                  <h3 class="promos__extra-title">Месяц бесплатно</h3>
+                  <p>Приведи друга, получи <br>абонемент в&nbsp;подарок</p>
+                  <a class="promos__link promos__link--extra" href="#">подробнее</a>
+                </div>
+              </div>
+              <div class="promos__extra-border-wrap">
+                <div class="promos__extra-deal promos__extra-deal--20-percent">
+                  <h3 class="promos__extra-title">Скидка&nbsp;20%</h3>
+                  <p>Корпоративный фитнес с&nbsp;командой</p>
+                  <a class="promos__link promos__link--extra" href="#">подробнее</a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
+      <section class="main-content__reviews reviews">
+        <div class="reviews__wrap container">
+          <h2 class="reviews__title title">Отзывы</h2>
+          <div class="reviews__list-buttons-wrap">
+            <div class="swiper-button-prev swiper-button-prev2 reviews__prev-button slider-button slider-button--prev">
+              <svg focusable="false" width="16" height="32" aria-label="Предыдущий слайд">
+                <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper-button-next swiper-button-next2 reviews__next-button slider-button">
+              <svg focusable="false" width="16" height="32" aria-label="Следующий слайд">
+                <use xlink:href="img/sprite/sprite.svg#arrow"></use>
+              </svg>
+            </div>
+            <div class="swiper review-slider reviews__container">
+              <div class="swiper-wrapper reviews__inner-container reviews__inner-container--nojs"
+                data-reviews-container>
+                <div class="swiper-slide reviews__item">
+                  <div class="reviews__item-wrap">
+                    <picture>
+                      <source srcset="img/content/review-photo@1x.webp 1x, img/content/review-photo@2x.webp 2x"
+                        type="image/webp">
+                      <img src="img/content/review-photo@1x.jpg"
+                        srcset="img/content/review-photo@1x.jpg 1x, img/content/review-photo@2x.jpg 2x" width="80"
+                        height="80" loading="lazy" alt="Фотография клиента SUPREGYM.">
+                    </picture>
+                    <h3>Анна Орлова</h3>
+                    <blockquote>
+                      «Хожу в&nbsp;SuperClub уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры
+                      обновляют,
+                      персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей»
+                    </blockquote>
+                  </div>
+                </div>
+                <div class="swiper-slide reviews__item">
+                  <div class="reviews__item-wrap">
+                    <picture>
+                      <source srcset="img/content/review-photo-2@1x.webp 1x, img/content/review-photo-2@2x.webp 2x"
+                        type="image/webp">
+                      <img src="img/content/review-photo-2@1x.jpg"
+                        srcset="img/content/review-photo-2@1x.jpg 1x, img/content/review-photo-2@2x.jpg 2x" width="80"
+                        height="80" loading="lazy" alt="Фотография клиента SUPREGYM.">
+                    </picture>
+                    <h3>Эразм Козодоев</h3>
+                    <blockquote>
+                      «Уже год хожу на&nbsp;карате и&nbsp;CrossFit. Тренеры четкие, все по&nbsp;делу. Увеличил бицепсы
+                      и&nbsp;ловкость рук, ног и&nbsp;ушей»
+                    </blockquote>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="main-content__contacts-form-wrap">
+        <section class="main-content__form trial-training">
+          <div class="trial-training__outer-wrap">
+            <div class="trial-training__inner-wrap">
+              <h2 class="trial-training__title title">Бесплатное занятие</h2>
+              <form class="trial-training__form form" action="https://echo.htmlacademy.ru" method="post" data-form>
+                <div class="form__name-field input-wrap" data-name-input>
+                  <label class="form__name-field-label">
+                    <span class="visually-hidden">Введите имя</span>
+                    <input type="text" placeholder="Имя" name="user-name" required minlength="1">
+                  </label>
+                </div>
+                <div class="form__telephone-field input-wrap" data-telephone-input>
+                  <label class="form__telephone-field-label">
+                    <span class="visually-hidden">Введите телефон</span>
+                    <input type="tel" placeholder="Телефон" name="user-telephone" required>
+                  </label>
+                </div>
+                <div class="form__submit-wrap">
+                  <button type="submit" data-send-button>Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="main-content__contacts contacts">
+          <div class="contacts__outer-wrap">
+            <div class="contacts__inner-wrap">
+              <h2 class="contacts__title title">Контакты</h2>
+              <ul class="contacts__list">
+                <li class="contacts__list-item">
+                  <div class="contacts__list-item-wrap">
+                    <h3>Адрес:</h3>
+                    <span>г. Омск, ул.&nbsp;60&nbsp;лет Октября, 7</span>
+                  </div>
+                </li>
+                <li class="contacts__list-item contacts__list-item--phone">
+                  <div class="contacts__list-item-wrap">
+                    <h3>Телефон:</h3>
+                    <a href="tel:88005555555">8-800-555-55-55</a>
+                  </div>
+                </li>
+                <li class="contacts__list-item contacts__list-item--hours">
+                  <div class="contacts__list-item-wrap">
+                    <h3>График работы:</h3>
+                    <span>Пн-Вс: с&nbsp;8:00 до&nbsp;22:00</span>
+                  </div>
+                </li>
+                <li class="contacts__list-item contacts__list-item--mail">
+                  <div class="contacts__list-item-wrap">
+                    <h3>Email:</h3>
+                    <a href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
-    <!--Footer-->
-    <footer class="page__footer footer">
-      <div class="footer__wrap container">
-        <div class="footer__inner-logo-wrap">
-          <a class="logo">
-            <svg class="logo__svg" focusable="false" width="70" height="38" aria-label="Круизы в Антарктику">
-              <use xlink:href="img/sprite/sprite.svg#iceberg-logo"></use>
+    <footer class="page__footer main-footer">
+      <div class="main-footer__wrap container container--footer">
+        <div class="main-footer__logo-wrap logo-block logo-block--footer">
+          <a class="logo-block__link">
+            <svg focusable="false" width="88" height="32" aria-label="Фитнес центр SUPERGYM">
+              <use xlink:href="img/sprite/sprite.svg#supergym-logo"></use>
             </svg>
           </a>
         </div>
-        <!--Navigation-->
-        <nav class="footer__navigation user-navigation user-navigation--bottom">
-          <ul class="user-navigation__list">
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Преимущества</a>
+        <nav class="main-footer__navigation footer-navigation">
+          <ul class="footer-navigation__list">
+            <li class="footer-navigation__item">
+              <a class="footer-navigation__link" href="#">Услуги</a>
             </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Направления</a>
+            <li class="footer-navigation__item footer-navigation__item--pass">
+              <a class="footer-navigation__link" href="#">Абонементы</a>
             </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Ближайшие круизы</a>
+            <li class="footer-navigation__item footer-navigation__item-promo">
+              <a class="footer-navigation__link" href="#">Акции</a>
             </li>
-            <li class="user-navigation__item">
-              <a class="user-navigation__link" href="#">Контакты</a>
+            <li class="footer-navigation__item footer-navigation__item-coach">
+              <a class="footer-navigation__link" href="#">Тренеры</a>
+            </li>
+            <li class="footer-navigation__item footer-navigation__item-timetable">
+              <a class="footer-navigation__link" href="#">Расписание</a>
             </li>
           </ul>
         </nav>
-        <section class="footer__social-media social-media">
+        <section class="main-footer__social-media social-media">
           <h2 class="visually-hidden">Посетите наши странички в социальных сетях</h2>
           <ul class="social-media__list">
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--classmates" href="#">
-                <svg class="social-media__svg" focusable="false" width="12" height="20" aria-label="Одноклассники">
+              <a class="social-media__link" href="#">
+                <svg class="social-media__svg" focusable="false" width="25" height="25" aria-label="Вконтакте">
+                  <use xlink:href="img/sprite/sprite.svg#vk"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="social-media__item">
+              <a class="social-media__link" href="#">
+                <svg class="social-media__svg" focusable="false" width="25" height="25" aria-label="Одноклассники">
                   <use xlink:href="img/sprite/sprite.svg#classmates"></use>
                 </svg>
               </a>
             </li>
             <li class="social-media__item">
-              <a class="social-media__link social-media__link--star" href="#">
-                <svg class="social-media__svg" focusable="false" width="20" height="20" aria-label="Дзен">
-                  <use xlink:href="img/sprite/sprite.svg#star"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social-media__item">
-              <a class="social-media__link social-media__link--alien" href="#">
-                <svg class="social-media__svg" focusable="false" width="20" height="20" aria-label="Reddit">
-                  <use xlink:href="img/sprite/sprite.svg#alien"></use>
+              <a class="social-media__link" href="#">
+                <svg class="social-media__svg" focusable="false" width="25" height="25" aria-label="Reddit">
+                  <use xlink:href="img/sprite/sprite.svg#reddit"></use>
                 </svg>
               </a>
             </li>
@@ -530,9 +819,7 @@
       </div>
     </footer>
   </div>
-  <script src="https://api-maps.yandex.ru/2.1/?apikey=74532f13-8895-4664-8153-68a65d7ca79e&lang=ru_RU"
-    type="text/javascript"></script>
   <script src="js/vendor.min.js"></script>
-  <script src="js/main.min.js" type="module"></script>
+  <script src="js/main.min.js"></script>
 </body>
 </html>
